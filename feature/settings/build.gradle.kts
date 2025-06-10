@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.reyaz.feature.home"
+    namespace = "com.reyaz.feature.settings"
     compileSdk = 35
 
     defaultConfig {
@@ -36,8 +36,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:domain"))
-    implementation(project(":core:data"))
+
     implementation(project(":core:ui"))
 
     implementation(libs.androidx.core.ktx)

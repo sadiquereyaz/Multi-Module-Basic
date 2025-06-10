@@ -45,8 +45,8 @@ dependencies {
 
     // Feature modules
     implementation(project(":feature:home"))
-//    implementation(project(":feature:profile"))
-//    implementation(project(":feature:settings"))
+    implementation(project(":feature:profile"))
+    implementation(project(":feature:settings"))
 
     // Core modules
     implementation(project(":core:ui"))

@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.reyaz.feature.home"
+    namespace = "com.reyaz.core.profile"
     compileSdk = 35
 
     defaultConfig {
@@ -36,8 +36,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:domain"))
-    implementation(project(":core:data"))
+
     implementation(project(":core:ui"))
 
     implementation(libs.androidx.core.ktx)
@@ -47,11 +46,13 @@ dependencies {
     // Compose BOM
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.bundles.compose)
-
-    // Navigation
-    implementation(libs.androidx.navigation.compose)
-
     // Dependency Injection
     implementation(libs.bundles.hilt)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
     kapt(libs.hilt.compiler)
+
 }
